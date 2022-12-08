@@ -1,13 +1,78 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    color: white;
+    font-family: sans-serif;
 }
 
 .background {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vh;
+    width: 100%;
+    z-index: -1;
 }
 
+.game-title {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.game-title p {
+    font-size: 100px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.characters {
+    width: 40%;
+}
+
+.enemies {
+    width: 40%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.main-button {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    text-align: center;
+    background: rgb(0, 110, 255);
+    padding: 25px 100px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.main-button:hover {
+    background: rgb(57, 143, 255);
+}
+
+.character-img {
+    width: 100%;
+}
+
+
+
+@media(max-width: 1600px) {
+    .background {
+        width: 100%;
+        height: 100%;
+    }
+}
