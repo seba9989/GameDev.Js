@@ -1,2 +1,2 @@
 # GameDev.Js ;
-<php> css tego i jeszcze coś
+css tego i jeszcze coś tego typu
