@@ -16,7 +16,7 @@ body {
 
 .game-title {
     width: 100%;
-    height: 200px;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -28,7 +28,9 @@ body {
 
 .main {
     width: 100%;
+    height: 80vh;
     display: flex;
+    justify-content: center;
 }
 
 .characters {
@@ -56,7 +58,7 @@ body {
     padding: 25px 100px;
     margin-bottom: 15px;
     border-radius: 20px;
-    font-size: 30px;
+    font-size: 150%;
     transition: 0.2s;
 }
 
