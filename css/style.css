@@ -10,7 +10,7 @@ body {
 
 .background {
     position: absolute;
-    top: 0;
+    top: -20%;
     left: 0;
     width: 100%;
     z-index: -1;
@@ -82,11 +82,4 @@ body {
 
 .character-img {
     width: 100%;
-}
-
-
-
-
-.background.smaller-width {
-    height: 100%;
 }
