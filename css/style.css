@@ -72,6 +72,7 @@ body {
     border: none;
     font-size: 120%;
     font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
 }
 
 .main-button:hover {
