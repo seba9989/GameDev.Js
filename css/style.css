@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800;900&family=Press+Start+2P&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -22,8 +24,9 @@ body {
     align-items: flex-start;
 }
 
-.game-title p {
-    font-size: 100px;
+.game-title img {
+    width: 50%;
+    margin: 50px;
 }
 
 .main {
@@ -52,18 +55,19 @@ body {
 .main-button {
     text-decoration: none;
     color: white;
-    width: 100px;
     text-align: center;
-    background: rgb(0, 110, 255);
+    background-image: url('../img/buttons/btn-normal-menu.png');
     padding: 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-bottom: 15px;
     border-radius: 20px;
-    font-size: 150%;
-    transition: 0.2s;
+    font-size: 120%;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .main-button:hover {
-    background: rgb(57, 143, 255);
+    background-image: url('../img/buttons/btn-hover-menu.png');
 }
 
 .character-img {
