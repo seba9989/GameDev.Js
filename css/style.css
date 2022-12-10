@@ -52,22 +52,31 @@ body {
     width: 20%;
 }
 
-.main-button {
+.buttons a {
     text-decoration: none;
+}
+
+.main-button {
+    width: 240px;
+    height: 80px;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background: transparent;
     background-image: url('../img/buttons/btn-normal-menu.png');
     padding: 25px 100px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 15px;
-    border-radius: 20px;
+    border: none;
     font-size: 120%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
 .main-button:hover {
     background-image: url('../img/buttons/btn-hover-menu.png');
+    align-items: center;
 }
 
 .character-img {
