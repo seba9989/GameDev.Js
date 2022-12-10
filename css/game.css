@@ -6,4 +6,16 @@ body {
     overflow: hidden;
     color: white;
     font-family: sans-serif;
+    background: rgb(22, 35, 37);
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    width: 
 }
