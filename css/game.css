@@ -5,7 +5,7 @@ body {
     padding: 0;
     overflow: hidden;
     color: white;
-    font-family: sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
     background: rgb(22, 35, 37);
 }
 
@@ -16,6 +16,136 @@ body {
     flex-direction: column;
 }
 
+.top {
+    display: flex;
+}
+
+
+
+
+/* STATS */
+
 .stats {
-    width: 
+    width: 400px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-info {
+    width: 320px;
+    height: 500px;
+    background: rgb(61, 83, 77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-stats {
+    font-size: 40px;
+    margin: 0;
+    padding: 20px;
+}
+
+.progress-stats {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background: rgb(59, 59, 59);
+    margin: 20px;
+    margin-top: 2px;
+}
+
+.bar-stats {
+    height: 100%;
+}
+
+.percent-stats {
+    margin: 0;
+}
+
+.hp-bar {
+    background: rgb(201, 14, 14);
+    width: 60%;
+}
+
+.energy-bar {
+    background: rgb(14, 201, 98);
+    width: 30%;
+}
+
+.other-stats {
+    width: 100%;
+}
+
+.other-statistics {
+    font-size: 25px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/* COMBAT */
+
+.combat {
+    width: 80%;
+    height: 580px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.character {
+    width: 40%;
+    height: 100%;
+}
+
+.enemies {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.enemie-cont {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.enemy1 {
+    width: 180px;
+    height: 350px;
+    background: #fff;
+    margin-inline: 50px;
+}
+
+.enemy1-stats {
+    width: 200px;
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.enemy1-stats .progress-stats {
+    position: relative;
+    width: 180px;
+    height: 15px;
+    background: rgb(59, 59, 59);
+    margin: 20px;
+    margin-top: 2px;
+}
+
+.enemy-name {
+    color: black;
+    font-size: 20px;
 }
