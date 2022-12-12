@@ -13,6 +13,9 @@ function wandButtons() {
 }
 
 function returnMainButtons() {
+    
+    hidingWand()
+
     document.querySelector('.attack-buttons').innerHTML = '<button onclick="returnMainButtons()" class="return-button"><img src="../img/buttons/return-button.png" alt=""></button><button onclick="wandButtons()" class="attack-button attack1-button">Wand</button><button class="attack-button attack2-button">Book</button><button class="attack-button attack2-button">Skip</button>'
 }
 
