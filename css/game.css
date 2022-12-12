@@ -241,6 +241,10 @@ body {
     border-image-slice: 10 fill;  
 }
 
+.player-card {
+    margin-left: 2%;
+}
+
 .player-card .color {
     background: rgb(65, 160, 11);
 }
