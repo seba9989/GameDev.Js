@@ -189,6 +189,33 @@ body {
     width: 50%;
     height: 100%;
     background: rgb(67, 67, 104);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 25%;
+    background: rgb(51, 51, 51);
+    border: 2px solid #111;   
+    height: 90%;
+    margin-right: 2%;
+    transform: scale(0.9);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigger-card {
+    margin-left: 2%;
+    transform: scale(1);
+    background: rgb(71, 71, 71);
+}
+
+.card img {
+    width: 250%;
 }
 
 
