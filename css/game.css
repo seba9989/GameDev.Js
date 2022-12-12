@@ -168,27 +168,24 @@ body {
 }
 
 .attack-button {
-    width: 240px;
-    height: 80px;
+    width: 90%;
+    height: 25%;
+    margin: 10px;
     color: white;
+    border: 15px solid;
+    background: none;
+    border-image-source: url("../img/borders/dark-border.png");
+    border-image-slice: 10 fill;
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    background: transparent;
-    background-image: url('../img/buttons/btn-normal-menu.png');
-    padding: 25px 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 15px;
-    border: none;
-    font-size: 120%;
+    font-size: 1.6vw;
     font-family: 'Press Start 2P', sans-serif;
     cursor: pointer;
 }
 
 .attack-button:hover {
-    background-image: url("../img/buttons/btn-hover-menu.png");
-    align-items: center;
+    border-image-source: url("../img/borders/light-border.png");
 }
 
 
@@ -259,9 +256,10 @@ body {
 /* ACTIONS */
 
 .actions {
+    position: relative;
     width: 25%;
     height: 100%;
-    /* background: rgb(114, 0, 44); */
+    /* background: rgb(0, 2, 114); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,25 +276,22 @@ body {
 }
 
 .actions-button {
-    width: 240px;
-    height: 80px;
+    width: 90%;
+    height: 25%;
+    margin: 10px;
     color: white;
+    border: 15px solid;
+    background: none;
+    border-image-source: url("../img/borders/dark-border.png");
+    border-image-slice: 10 fill;
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    background: transparent;
-    background-image: url('../img/buttons/btn-normal-menu.png');
-    padding: 25px 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 15px;
-    border: none;
-    font-size: 120%;
+    font-size: 1.6vw;
     font-family: 'Press Start 2P', sans-serif;
     cursor: pointer;
 }
 
 .actions-button:hover {
-    background-image: url("../img/buttons/btn-hover-menu.png");
-    align-items: center;
+    border-image-source: url("../img/borders/light-border.png");
 }
