@@ -71,5 +71,14 @@ function attackWand() {
     setTimeout(wandIdle, 2000)
 }
 
+function healWand() {
+    let spritePlayer = document.querySelector('.character img')
+
+    spritePlayer.src = "../img/characters/mage/wand-heal.gif"
+    console.log(spritePlayer.src)
+
+    setTimeout(wandIdle, 3800)
+}
+
 
 

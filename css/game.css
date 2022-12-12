@@ -158,6 +158,20 @@ body {
     align-items: center;
 }
 
+.return-button {
+    position: absolute;
+    top: -12%;
+    left: -10%;
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.return-button img {
+    width: 80%;
+}
+
 .attack-buttons {
     width: 90%;
     height: 90%;
