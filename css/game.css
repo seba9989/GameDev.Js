@@ -6,7 +6,15 @@ body {
     overflow: hidden;
     color: white;
     font-family: 'Press Start 2P', sans-serif;
-    background: rgb(22, 35, 37);
+    background: #212121;
+}
+
+.background {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 .main {
@@ -34,7 +42,7 @@ body {
 .stats {
     width: 30%;
     height: 100%;
-    background: rgb(134, 34, 34);
+    /* background: rgb(134, 34, 34); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,7 +103,7 @@ body {
 .combat {
     width: 70%;
     height: 100%;
-    background: rgb(39, 122, 50);
+    /* background: rgb(39, 122, 50); */
     display: flex;
     align-items: flex-end;
 }
@@ -140,7 +148,7 @@ body {
     position: relative;
     width: 25%;
     height: 100%;
-    background: rgb(0, 2, 114);
+    /* background: rgb(0, 2, 114); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,7 +196,7 @@ body {
 .queue {
     width: 50%;
     height: 100%;
-    background: rgb(67, 67, 104);
+    /* background: rgb(67, 67, 104); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,11 +219,16 @@ body {
 .bigger-card {
     margin-left: 2%;
     transform: scale(1);
-    background: rgb(71, 71, 71);
+    background: rgb(51, 51, 51);
 }
 
 .card img {
     width: 250%;
+    transform: rotateY(180deg);
+}
+
+.bigger-card img {
+    transform: rotateY(0deg);
 }
 
 
@@ -226,7 +239,7 @@ body {
 .actions {
     width: 25%;
     height: 100%;
-    background: rgb(114, 0, 44);
+    /* background: rgb(114, 0, 44); */
     display: flex;
     flex-direction: column;
     justify-content: center;
