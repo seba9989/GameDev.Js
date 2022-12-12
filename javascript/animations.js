@@ -68,7 +68,7 @@ function attackWand() {
     spritePlayer.src = "../img/characters/mage/wand-attack.gif"
     console.log(spritePlayer.src)
 
-    setTimeout(wandIdle, 2300)
+    setTimeout(wandIdle, 2000)
 }
 
 

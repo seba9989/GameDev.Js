@@ -106,11 +106,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-right: 250px;
+    margin-right: 25%;
 }
 
 .character img {
-    width: 100%;
+    width: 130%;
 }
 
 .enemy {
@@ -119,7 +119,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-right: -150px;
+    margin-left: -10%;
 }
 
 .enemy2 {
@@ -127,7 +127,7 @@ body {
 }
 
 .enemy img {
-    width: 100%;
+    width: 130%;
     transform: rotateY(180deg);
 }
 
@@ -137,9 +137,47 @@ body {
 /* ATTACKS */
 
 .attacks {
+    position: relative;
     width: 25%;
     height: 100%;
     background: rgb(0, 2, 114);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attack-buttons {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.attack-button {
+    width: 240px;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background: transparent;
+    background-image: url('../img/buttons/btn-normal-menu.png');
+    padding: 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 120%;
+    font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
+}
+
+.attack-button:hover {
+    background-image: url("../img/buttons/btn-hover-menu.png");
+    align-items: center;
 }
 
 
@@ -162,4 +200,41 @@ body {
     width: 25%;
     height: 100%;
     background: rgb(114, 0, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions-buttons {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions-button {
+    width: 240px;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background: transparent;
+    background-image: url('../img/buttons/btn-normal-menu.png');
+    padding: 25px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 120%;
+    font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
+}
+
+.actions-button:hover {
+    background-image: url("../img/buttons/btn-hover-menu.png");
+    align-items: center;
 }
