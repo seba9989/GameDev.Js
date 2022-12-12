@@ -1,0 +1,1 @@
+document.querySelector('.player-card').classList.toggle('card-turn')
