@@ -1,4 +1,4 @@
-function normalIdle() {
+export function normalIdle() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/mage-normal.gif"
@@ -8,7 +8,7 @@ function normalIdle() {
 
 //book animations
 
-function gettingBook() {
+export function gettingBook() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/getting-book.gif"
@@ -17,14 +17,14 @@ function gettingBook() {
     setTimeout(bookIdle, 1100)
 }
 
-function bookIdle() {
+export function bookIdle() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/book-normal.gif"
     console.log(spritePlayer.src)
 }
 
-function hidingBook() {
+export function hidingBook() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/hiding-book.gif"
@@ -37,7 +37,7 @@ function hidingBook() {
 
 //wand animations
 
-function gettingWand() {
+export function gettingWand() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/wand-getting.gif"
@@ -46,14 +46,14 @@ function gettingWand() {
     setTimeout(wandIdle, 2000)
 }
 
-function wandIdle() {
+export function wandIdle() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/wand-idle.gif"
     console.log(spritePlayer.src)
 }
 
-function hidingWand() {
+export function hidingWand() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/wand-hiding.gif"
@@ -62,7 +62,7 @@ function hidingWand() {
     setTimeout(normalIdle, 1000)
 }
 
-function attackWand() {
+export function attackWand() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/wand-attack.gif"
@@ -71,7 +71,7 @@ function attackWand() {
     setTimeout(wandIdle, 2000)
 }
 
-function healWand() {
+export function healWand() {
     let spritePlayer = document.querySelector('.character img')
 
     spritePlayer.src = "../img/characters/mage/wand-heal.gif"
@@ -79,6 +79,7 @@ function healWand() {
 
     setTimeout(wandIdle, 3800)
 }
+
 
 
 
