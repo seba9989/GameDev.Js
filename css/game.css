@@ -158,17 +158,17 @@ body {
     align-items: center;
 }
 
-.return-button {
-    position: absolute;
-    top: -12%;
-    left: -10%;
+#return-button {
     background: none;
     border: none;
     display: none;
     cursor: pointer;
+    margin-left: -16vw;
+    margin-top: -6vh;
+    margin-bottom: -6vh;
 }
 
-.return-button img {
+#return-button img {
     width: 80%;
 }
 
@@ -201,6 +201,14 @@ body {
 
 .attack-button:hover {
     border-image-source: url("../img/borders/light-border.png");
+}
+
+.attack1-button {
+    display: none;
+}
+
+.attack2-button {
+    display: none;
 }
 
 

@@ -3,135 +3,110 @@
 import { 
     gettingWand,
     attackWand,
-    healWand
+    healWand,
+    hidingWand,
+    hidingBook,
+    gettingBook
 } from './animations.js'
 // ZMIENNE GLOBALNE
 
 
 
-
-
 document.querySelector('.player-card').classList.add('card-turn')
 
-let attackButtons = document.querySelector('.attack-buttons').innerHTML
-const wandButton = document.querySelector('.wand')
 
 
 
-function wandButtons() {
+const wandButton = document.querySelector('#wand')
+const bookButton = document.querySelector('#book')
+const return1Button = document.querySelector('#return1')
+const return2Button = document.querySelector('#return2')
+const wandAttack = document.querySelector('#wandAttack')
+const wandHeal = document.querySelector('#wandHeal')
+const attackMain = document.querySelectorAll('.attack-main')
+const attack1Button = document.querySelectorAll('.attack1-button')
+const attack2Button = document.querySelectorAll('.attack2-button')
 
+
+// FIRST WEAPON BUTTONS
+wandButton.onclick = () => {
     gettingWand()
 
+    attackMain.forEach(button => {
+        button.style.display = 'none'
+    });
 
-    document.querySelector('.attack-buttons').innerHTML = '<button onclick="returnMainButtons()" class="return-button"><img src="../img/buttons/return-button.png" alt=""></button>'
+    attack1Button.forEach(button => {
+        button.style.display = 'block'
+    });
 
-    // ADDING FIRST ATTACK BUTTON
-    const newAttack1 = document.createElement('div')
-    newAttack1.innerText = "Attack"
-    newAttack1.classList.add('attack-button')
-    document.querySelector('.attack-buttons').appendChild(newAttack1)
-    newAttack1.addEventListener('click', attackWand)
-
-    
-
-    // ADDING FIRST ATTACK BUTTON
-    const newAttack2 = document.createElement('div')
-    newAttack2.innerText = "Heal"
-    newAttack2.classList.add('attack-button')
-    document.querySelector('.attack-buttons').appendChild(newAttack2)
-    newAttack2.addEventListener('click', healWand)
-
-
-    document.querySelector('.return-button').style.display = 'block'
+    attack2Button.forEach(button => {
+        button.style.display = 'none'
+    });
 }
-wandButton.addEventListener('click', wandButtons)
+
+
+// SECOND WEAPON BUTTONS
+bookButton.onclick = () => {
+    gettingBook()
+
+    attackMain.forEach(button => {
+        button.style.display = 'none'
+    });
+
+    attack1Button.forEach(button => {
+        button.style.display = 'none'
+    });
+
+    attack2Button.forEach(button => {
+        button.style.display = 'block'
+    });
+}
 
 
 
-function returnMainButtons() {
-
+// MAIN BUTTONS
+return1Button.onclick = () => {
     hidingWand()
 
-    document.querySelector('.attack-buttons').innerHTML = '<button onclick="returnMainButtons()" class="return-button"><img src="../img/buttons/return-button.png" alt=""></button><button onclick="wandButtons()" class="attack-button attack1-button">Wand</button><button class="attack-button attack2-button">Book</button><button class="attack-button attack2-button">Skip</button>'
+    attackMain.forEach(button => {
+        button.style.display = 'block'
+    });
+
+    attack1Button.forEach(button => {
+        button.style.display = 'none'
+    });
+
+    attack2Button.forEach(button => {
+        button.style.display = 'none'
+    });
+}
+
+
+return2Button.onclick = () => {
+    hidingBook()
+
+    attackMain.forEach(button => {
+        button.style.display = 'block'
+    });
+
+    attack1Button.forEach(button => {
+        button.style.display = 'none'
+    });
+
+    attack2Button.forEach(button => {
+        button.style.display = 'none'
+    });
 }
 
 
 
+wandAttack.onclick = attackWand
+wandHeal.onclick = healWand
 
 
 
-// ANIMATIONS 
-
-
-// function normalIdle() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/mage-normal.gif"
-// }
-
-
-// //book animations
-
-// function gettingBook() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/getting-book.gif"
-
-//     setTimeout(bookIdle, 1100)
-// }
-
-// function bookIdle() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/book-normal.gif"
-// }
-
-// function hidingBook() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/hiding-book.gif"
-
-//     setTimeout(normalIdle, 1100)
-// }
 
 
 
-// //wand animations
 
-// function gettingWand() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/wand-getting.gif"
-
-//     setTimeout(wandIdle, 2000)
-// }
-
-// function wandIdle() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/wand-idle.gif"
-// }
-
-// function hidingWand() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/wand-hiding.gif"
-
-//     setTimeout(normalIdle, 1000)
-// }
-
-// function attackWand() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/wand-attack.gif"
-
-//     setTimeout(wandIdle, 2000)
-// }
-
-// function healWand() {
-//     let spritePlayer = document.querySelector('.character img')
-
-//     spritePlayer.src = "../img/characters/mage/wand-heal.gif"
-
-//     setTimeout(wandIdle, 3800)
-// }
