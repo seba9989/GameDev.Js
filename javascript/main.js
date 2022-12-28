@@ -1,18 +1,62 @@
 "use strict"
 
-import { 
-    gettingWand,
-    attackWand,
-    healWand,
-    hidingWand,
-    hidingBook,
-    gettingBook
-} from './animations.js'
+import * as global from './global.js'
+
+import * as animate from './animations.js'
 // ZMIENNE GLOBALNE
 
 
 
 document.querySelector('.player-card').classList.add('card-turn')
+
+// placeholder wybor postaci etc.
+
+const hpPlayer = global.hpMage
+const energyPlayer = global.energyMage
+const dmgPlayer = global.dmgMage
+const armorPlayer = global.armorMage
+const dodgePlayer = global.dodgeMage
+const critChancePlayer = global.critChanceMage
+const critPlayer = global.critMage
+
+
+// randomise battle
+
+let amountEnemies = Math.ceil(Math.random() * 2) + 1
+
+
+
+function enemiesStart(amountEnemies) {
+    for(let i = 0; i <= amountEnemies; i++) {
+        let enemyType = Math.ceil(Math.random() * 1) + 1
+        if(enemyType == 1) {
+            global.ememiesStats[i] == global.enemy1
+        }
+        else if (enemyType == 2) {
+            global.ememiesStats[i] == global.enemy2
+        }
+    }
+}
+
+
+
+// battle 
+
+while ((hpPlayer > 0) || (global.enemiesStats[0][0] + global.enemiesStats[1][0] + global.enemiesStats[2][0] > 0)) {
+        wandAttack.onclick = () => {
+            console.log("ok")
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,7 +74,7 @@ const attack2Button = document.querySelectorAll('.attack2-button')
 
 // FIRST WEAPON BUTTONS
 wandButton.onclick = () => {
-    gettingWand()
+    animate.gettingWand()
 
     attackMain.forEach(button => {
         button.style.display = 'none'
@@ -48,7 +92,7 @@ wandButton.onclick = () => {
 
 // SECOND WEAPON BUTTONS
 bookButton.onclick = () => {
-    gettingBook()
+    animate.gettingBook()
 
     attackMain.forEach(button => {
         button.style.display = 'none'
@@ -67,7 +111,7 @@ bookButton.onclick = () => {
 
 // MAIN BUTTONS
 return1Button.onclick = () => {
-    hidingWand()
+    animate.hidingWand()
 
     attackMain.forEach(button => {
         button.style.display = 'block'
@@ -84,7 +128,7 @@ return1Button.onclick = () => {
 
 
 return2Button.onclick = () => {
-    hidingBook()
+    animate.hidingBook()
 
     attackMain.forEach(button => {
         button.style.display = 'block'
@@ -101,8 +145,9 @@ return2Button.onclick = () => {
 
 
 
-wandAttack.onclick = attackWand
-wandHeal.onclick = healWand
+
+wandHeal.onclick = animate.healWand
+
 
 
 
